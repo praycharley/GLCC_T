@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Global Light Charismatic Chapel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+  <div class="container">
+    <a class="navbar-brand d-flex flex-column align-items-center" href="#">
+      <span class="d-inline d-lg-none fw-bold">GLCC</span>
+      <img src="assets/Glcc logo.jpg" alt="GLCC Logo" class="rounded-circle img-fluid" style="width: 40px; height: 40px;">
+      <span class="d-none d-lg-inline">Global Light Charismatic Chapel</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h1 class="text-primary text-center mb-5">Contact Us</h1>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Contact Info Section -->
+<section class="bg-light py-5">
+  <div class="container" data-aos="fade-right">
+    <h2 class="text-center text-primary mb-4">Our Contact Details</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <h5>Phone</h5>
+        <p>+233 55 000 0000</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Email</h5>
+        <p>info@glccghana.org</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Address</h5>
+        <p>123 Revival Rd, Accra, Ghana</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="py-5">
+  <div class="container" data-aos="zoom-in">
+    <h2 class="text-center text-primary mb-4">Visit Us</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2759.706077688629!2d-1.6817273650827342!3d6.230926246073872!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1748787027721!5m2!1sen!2sgh" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="bg-light py-5">
+  <div class="container" data-aos="fade-left">
+    <h2 class="text-center text-primary mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+            What time do Sunday services start?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our Sunday services begin at 8:00 AM and end around 11:00 AM.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+            How can I join a fellowship group?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Speak to any usher after service or call our office for directions to the nearest group.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4 text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Global Light Charismatic Chapel. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+</body>
+</html>

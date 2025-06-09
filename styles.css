@@ -1,0 +1,307 @@
+/* General Styles */
+  #splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d6efd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+
+  .splash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .splash-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+  }
+
+  .splash-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .splash-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  /* Optional fade-out animation */
+  .fade-out {
+    animation: fadeOut 1s ease forwards;
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #222;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #4a148c;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+  overflow: hidden;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+}
+
+.hero-slideshow {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+}
+
+.hero-slideshow .slide {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slideshow .slide.active {
+  opacity: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Cards */
+.card {
+  border: none;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Church Media */
+#media {
+  background: linear-gradient(to right, #fefefe, #e4f0fb);
+  padding: 40px 0;
+}
+
+#media .section-title {
+  color: #0a3d62;
+  font-size: 2.6rem;
+}
+
+#media h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2f3542;
+}
+
+#media iframe {
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#media iframe:hover {
+  transform: scale(1.02);
+}
+
+
+/* Carousel */
+#galleryCarousel .carousel-inner {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+#galleryCarousel .carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+#galleryCarousel .carousel-item:hover img {
+  transform: scale(1.03);
+}
+
+#galleryCarousel .carousel-control-prev-icon,
+#galleryCarousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+/* Sermon Videos */
+.video-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.video-card .card-body {
+  background-color: #fdfdfd;
+  padding: 1rem;
+}
+
+.video-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.video-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Testimony */
+#testimony .bg-white {
+  border-left: 5px solid #007bff;
+  background: #ffffff;
+}
+
+/* Offertory */
+.offertory {
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  color: white;
+  padding: 70px 0;
+  text-align: center;
+}
+.offertory h2 {
+  font-weight: bold;
+}
+.offertory .btn {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.offertory .btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media Icons */
+.media-section img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Chatbot */
+#chatbot {
+  width: 50px;
+  height: 50px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#chatbot img {
+  width: 20px;
+  height: 20px;
+}
+
+#chatbot:hover {
+  background-color: #0056b3;
+}
+
+#chatbot:active {
+  background-color: #004085;
+}
+
+#chatbot:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #media iframe {
+    height: 220px;
+  }
+
+  #galleryCarousel .carousel-item img {
+    height: 220px;
+  }
+
+  .video-card .card-title {
+    font-size: 1rem;
+  }
+
+  .video-card .card-text {
+    font-size: 0.85rem;
+  }
+}

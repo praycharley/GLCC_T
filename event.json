@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Annual Thanksgiving Service",
+    "date": "2025-12-01T10:00:00",
+    "time": "10:00 AM - 2:00 PM",
+    "location": "GLCC Sanctuary",
+    "image": "assets/images/thanksgiving.jpg",
+    "type": "upcoming"
+  },
+  {
+    "title": "Youth Empowerment Conference",
+    "date": "2026-02-15T09:00:00",
+    "time": "Feb 15-17, 2026",
+    "location": "GLCC Main Auditorium",
+    "image": "assets/images/youth-conference.jpg",
+    "type": "upcoming"
+  },
+  {
+    "title": "Easter Praise Night",
+    "date": "2024-04-01T18:00:00",
+    "time": "6:00 PM - 10:00 PM",
+    "location": "GLCC Hall B",
+    "image": "assets/images/easter.jpg",
+    "type": "past"
+  }
+]
